@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+/*nav*/
+/*body*/
+/*p*/
+/*h1*/
+/*h2*/
+/*h3*/
+/*h5*/
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header barra de navegacion*/
+/*estilos y fuente de font family body*/
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: chocolate;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20220522/pngtree-celebration-party-banner-with-gold-balloons-clear-white-transparent-background-image_1386604.jpg);
+}
+
+/*variables globales h1 */
+h1 {
+  color: green;
+  text-decoration: underline;
+  text-align: center;
+  background-color: chocolate;
+  padding: 20px 1px;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/*variables globales h2*/
+h2 {
+  color: chocolate;
+  margin: 30px;
+  text-align: center;
+}
+
+/*variables globales h3*/
+h3 {
+  color: chocolate;
+  background-color: rgba(0, 128, 0, 0.363);
+  font-size: x-large;
+  margin-inline: 100px;
+  margin-block: 30px;
+  text-align: center;
+}
+
+/*variables globales h5*/
+h5 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: small;
+  margin-top: 5px;
+  background-color: rgba(210, 105, 30, 0.219);
+}
+
+/*variables globales p */
+p {
+  margin: 50px;
+  color: #000000;
+  text-align: center;
+  font-size: large;
+}
+
+/*logo whatsapp fijo en los html*/
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+  border: 5px;
+  margin: 5px;
+  z-index: 100;
+}
+
+/*header*/
+.navbar-brand,
+.nav-link {
+  color: green;
+  text-decoration: overline;
+}
+
+/*main index*/
+main .imagenHome {
+  display: flex;
+  justify-content: center;
+}
+main .imagenHome .imgIndex {
+  /*width: 70%;*/
+  height: 70vh;
+  border: 5px solid chocolate;
+  border-radius: 50px;
+}
+main .videoContenedor {
+  display: flex;
+  justify-content: center;
+  margin-inline: 10px;
+}
+
+main .slide {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-inline: 50px;
+}
+main img {
+  height: 90vh;
+}
+
+/*main nosotros*/
+@keyframes show {
+  from {
+    opacity: 1;
+    scale: 70%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+main .row {
+  display: flex;
+  margin-inline: 2px;
+  width: 100%;
+}
+main .row .container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+main .row .container .imgNos {
+  width: 100%;
+  height: 100%;
+  margin: 2px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+}
+
+main .fiestasInf {
+  display: flex;
+  justify-content: center;
+}
+main .fiestasInf img {
+  height: 60vh;
+  margin-left: 10px;
+}
+main .fiestasAdul {
+  display: flex;
+  justify-content: center;
+}
+main .fiestasAdul img {
+  height: 60vh;
+  margin-left: 10px;
+}
+
+/*main contacto*/
+main img {
+  /*width: 100%;*/
+  height: 80vh;
+  border: 5px solid chocolate;
+  border-radius: 50px;
+}
+main .imagenContacto,
+main .mapa {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+/*footer*/
+footer ul li {
+  list-style: none;
+  margin: 10px;
+}
+footer .irArriba {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  /*imagen e iframe  de  index*/
+  main .imagenHome .imgIndex {
+    height: 40vh;
+  }
+  main .videoContenedor {
+    height: 100%;
+    margin: 50px;
+  }
+  .whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border: 2px;
+    margin: 2px;
+    z-index: 1;
+  }
+  /*carrousell galeria*/
+  .slide img {
+    height: 40vh;
+  }
+  /*imagenes nosotros*/
+  main .row .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /*imagen contacto*/
+  .imagenContacto img {
+    height: 35vh;
+  }
+  /*eventos*/
+  main .fiestasInf {
+    display: flex;
+    flex-direction: column;
+  }
+  main .fiestasInf img {
+    height: 35vh;
+    margin-right: 5px;
+  }
+  main .fiestasAdul {
+    display: flex;
+    flex-direction: column;
+  }
+  main .fiestasAdul img {
+    height: 35vh;
+    margin-right: 5px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
