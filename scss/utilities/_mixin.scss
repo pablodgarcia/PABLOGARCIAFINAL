@@ -1,0 +1,9 @@
+@mixin fiestas {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin img {
+    height: 60vh;
+    margin-left: 10px;
+}
