@@ -106,6 +106,10 @@ main .videoContenedor {
   justify-content: center;
   margin-inline: 10px;
 }
+main .videoContenedor .youtu {
+  width: 800px;
+  height: 350px;
+}
 
 main .slide {
   margin-top: 10px;
@@ -190,13 +194,18 @@ footer .irArriba {
 }
 
 @media (max-width: 600px) {
+  body {
+    background-image: none;
+    background-color: #e4cccc;
+  }
   /*imagen e iframe  de  index*/
   main .imagenHome .imgIndex {
-    height: 40vh;
+    height: 35vh;
   }
-  main .videoContenedor {
-    height: 100%;
-    margin: 50px;
+  main .videoContenedor .youtu {
+    height: 200px;
+    width: 550px;
+    margin: 5px 50px 10px 50px;
   }
   .whatsapp {
     position: fixed;
