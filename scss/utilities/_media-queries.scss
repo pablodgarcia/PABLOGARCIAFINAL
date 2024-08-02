@@ -1,79 +1,69 @@
 @media (max-width: 600px) {
+  body {
+    background-image: none;
+    background-color: #e4cccc;
+  }
 
-    body {
-        background-image: none;
-        background-color: #e4cccc;
+  /*imagen e iframe  de  index*/
+  main {
+    .imagenHome .imgIndex {
+      height: 35vh;
     }
 
-
-
-    /*imagen e iframe  de  index*/
-    main {
-        .imagenHome .imgIndex {
-            height: 35vh;
-        }
-
-        .videoContenedor .youtu{
-            height: 200px;
-            width: 550px;
-            margin: 5px 50px 10px 50px;
-        }
+    .videoContenedor .youtu {
+      height: 200px;
+      width: 550px;
+      margin: 5px 50px 10px 50px;
     }
+  }
 
+  .whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border: 2px;
+    margin: 2px;
+    z-index: 1;
+  }
 
+  /*carrousell galeria*/
+  .slide img {
+    height: 40vh;
+  }
 
+  /*imagenes nosotros*/
+  main .row .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .whatsapp {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        padding: 2px;
-        border: 2px;
-        margin: 2px;
-        z-index: 1;
-    }
+  /*imagen contacto*/
+  .imagenContacto img {
+    height: 35vh;
+  }
+  /*eventos*/
 
-    /*carrousell galeria*/
-    .slide img {
-        height: 40vh;
-    }
+  main {
+    .fiestasInf {
+      display: flex;
+      flex-direction: column;
 
-    /*imagenes nosotros*/
-    main .row .container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    /*imagen contacto*/
-    .imagenContacto img {
+      img {
         height: 35vh;
+        margin-right: 5px;
+      }
     }
-    /*eventos*/
-
-    main {
-        .fiestasInf {
-    
-            display: flex;
-            flex-direction: column;
-            
-            img{
-                height: 35vh;
-                margin-right: 5px;
-                
-            }
-        }
-        .fiestasAdul{
-            display: flex;
-            flex-direction: column;
-            img{
-                height: 35vh;
-                margin-right: 5px;
-            }
-        }
+    .fiestasAdul {
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 35vh;
+        margin-right: 5px;
+      }
     }
-
-
+  }
 }
